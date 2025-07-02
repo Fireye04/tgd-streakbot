@@ -1,5 +1,5 @@
 services:
   bot:
-    image: ghcr.io/fireye04/tgd-streakbot:0.1.0
+    image: ghcr.io/fireye04/tgd-streakbot:0.1.1
     env_file: .env
 
