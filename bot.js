@@ -102,6 +102,10 @@ client.on('message', message => {
 		console.log(`Processing message received from ${message.author.username}`);
 		processMessageForStreak(message);
 	}
+
+	if (message.content === "ping") {
+		message.channel.send(`🏓 Pong`);
+	}
 });
 console.log('client message event configured');
 
