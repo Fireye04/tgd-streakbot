@@ -7,7 +7,7 @@
 
 ## Docker
 
-The bot can be installed via docker and an [example docker compose file is available here.](compose.yaml)
+The bot can be installed via docker and an [example docker compose file is available here.](docker-compose/compose.yaml)
 
 The bot requires a `.env` file that includes your `BOT_SECRET` from the Discord Developer Portal. You can also provide additional parameters to configure items such as the channel name or the timing of announcements. For more info check about the optional parameters, check out the larger example under the Manual Installation section.
 
