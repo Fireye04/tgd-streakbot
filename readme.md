@@ -9,6 +9,8 @@
 
 The bot can be installed via docker and an [example docker compose file is available here.](docker-compose/compose.yaml)
 
+Docker packages are automatically built and hosted on ghcr. To trigger a package build, either create a tagged release, or prepend build/ to your branch name and open a pull request.
+
 The bot requires a `.env` file that includes your `BOT_SECRET` from the Discord Developer Portal. You can also provide additional parameters to configure items such as the channel name or the timing of announcements. For more info check about the optional parameters, check out the larger example under the Manual Installation section.
 
 ```
