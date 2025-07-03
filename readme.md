@@ -25,8 +25,6 @@ The bot also expects a file called db.json. This is a json file, provided, which
 
 ## Manual Installation
 
-1. Create an app and a bot in the [Discord Developer Portal](https://discord.com/developers/applications).
-1. Ensure the bot "user account" is [added to your Discord server](https://discord.com/developers/docs/topics/oauth2#bots).
 2. Install NodeJS.
 3. Download this repo.
 4. Create a text file named `.env` _(literally `.env` nothing before the dot)_ 
