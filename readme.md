@@ -1,7 +1,30 @@
 ### To run this bot:
 
+## Prerequisites
+
 1. Create an app and a bot in the [Discord Developer Portal](https://discord.com/developers/applications).
 1. Ensure the bot "user account" is [added to your Discord server](https://discord.com/developers/docs/topics/oauth2#bots).
+
+## Docker
+
+The bot can be installed via docker and an [example docker compose file is available here.](docker-compose/compose.yaml)
+
+The bot requires a `.env` file that includes your `BOT_SECRET` from the Discord Developer Portal. You can also provide additional parameters to configure items such as the channel name or the timing of announcements. For more info check about the optional parameters, check out the larger example under the Manual Installation section.
+
+```
+BOT_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+The bot also expects a file called db.json. This is a json file, provided, which will contain all the user information and is mounted to the file system via a bind mount:
+```
+    volumes:
+      - type: bind
+        source: ./db.json
+        target: /usr/src/bot/db.json
+```
+
+## Manual Installation
+
 2. Install NodeJS.
 3. Download this repo.
 4. Create a text file named `.env` _(literally `.env` nothing before the dot)_ 
