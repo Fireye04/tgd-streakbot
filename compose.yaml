@@ -2,4 +2,7 @@ services:
   bot:
     image: ghcr.io/fireye04/tgd-streakbot:0.1.1
     env_file: .env
-
+    volumes:
+      - type: bind
+        source: ./db.json
+        target: /usr/src/bot/db.json
