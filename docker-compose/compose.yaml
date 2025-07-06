@@ -6,3 +6,5 @@ services:
       - type: bind
         source: ./db.json
         target: /usr/src/bot/db.json
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
