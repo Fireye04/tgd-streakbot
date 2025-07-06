@@ -25,6 +25,13 @@ The bot also expects a file called db.json. This is a json file, provided, which
         target: /usr/src/bot/db.json
 ```
 
+Since the bot is time-sensitive, you may want to adjust the timezeone of your container to match that of your os by binding the timezone files:
+```
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+```
+
 ## Manual Installation
 
 2. Install NodeJS.
